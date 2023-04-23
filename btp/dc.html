@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>React App</title>
+    <py-env>
+        - pandas
+        - numpy
+        - matplotlib
+        - paths:
+          - ./all.csv
+    </py-env>
+  </head>
+  <body>
+    <p id="'csv"></p>
+ <py-script>
+import pandas as pd
+import matplotlib.pyplot as plt
+from pyodide.http import open_url
+from matplotlib.pyplot import rcParams
+import numpy as np
+
+df = pd.read_csv('./all.csv', header=None)
+csv=Element('csv')
+csv.write(df.head())
+</py-script>
+  </body>
+</html>

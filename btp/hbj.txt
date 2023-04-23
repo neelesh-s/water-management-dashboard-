@@ -1,0 +1,7 @@
+monthly consumption data(month-wise): iska mein pie-chart banaunga
+weekly consumption data:(ye 3 month ka)
+hourly consumption data:(ye kisi ek month ka karke de diyo)
+daily consumption data:(kisi 2 mahine ke)
+processed data(basically remove all zeroes of 2 months)
+if possible:
+minute-wise data of atleast a week
